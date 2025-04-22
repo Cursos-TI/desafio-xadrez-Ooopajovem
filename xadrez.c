@@ -5,10 +5,6 @@
 // O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
 
 int main() {
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
-
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
     // Exemplo: Crie uma função recursiva para o movimento do Bispo.
@@ -53,11 +49,26 @@ int main() {
         int ra = 0;
         do
         {
-            printf("%d° Esquerda\n",ra);
+            printf("%d° Esquerda\n",ra+1);
             ra = ra + 1;
-        } while (ra <= 8);
-        
-
-
+        } while (ra < 8);
+        /*
+    Nível Aventureiro - Movimentação do Cavalo
+    Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
+    Um loop pode representar a movimentação horizontal e outro vertical.
+        */
+    //Desafio: nível aventureiro
+    //cavalo
+    int cavalo = 1;
+    printf("\nCavalo\n");
+    while (cavalo == 1)
+    {
+        for (int i = 0; i <2; i++)
+        {
+            printf("%d° Baixo\n", i+1);
+        }
+        printf("%d° Esquerda\n", cavalo);
+        cavalo = cavalo + 1;
+    }    
     return 0;
 }
